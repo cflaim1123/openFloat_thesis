@@ -2,7 +2,7 @@
 This repository documents the build and implementation of a DIY profiling float for my undergraduate senior thesis at the University of Washington School of Oceanography.
 To clone this repository to your working directory, paste the following line into your terminal or command line:
 ```
-git clone https://github.com/cflaim1123/openFloat.git
+git clone https://github.com/cflaim1123/openFloat_thesis.git
 ```
 If you do not have git installed on your machine, follow this [link](https://git-scm.com/downloads) to the git website. 
 
