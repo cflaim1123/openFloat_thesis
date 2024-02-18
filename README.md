@@ -7,20 +7,14 @@ git clone https://github.com/cflaim1123/openFloat_thesis.git
 If you do not have git installed on your machine, follow this [link](https://git-scm.com/downloads) to the git website. 
 
 ## Project description
-This project aims to quantify haloclines in Colvos Passage Puget Sound, WA, by building a DIY profiling float that costs ~500 USD to manufacture. Traditional autonomous underwater vehicles (AUVs) cost ~100,000 USD or more. We hope to obtain high-quality data using traditional AUV deployment and propulsion methods with a DIY AUV. This reduces the financial barrier required to use AUV data collection methods for scientific research and allows higher resolution data to be obtained since more instruments can be purchased with the same lump sum of money. 
+Ocean salinity, a measure of salt concentration in seawater, is a key variable influencing water density and controls important processes like mixing and stratification. Temporal and spatial salinity variability is high in dynamic coastal systems like Puget Sound, which can present a challenge for making salinity measurements that can characterize this variability. Salinity is typically measured using conductivity cells, a sensor that quantifies electrical current through seawater. These sensors can be deployed on ship-based CTDs, spatially-limited moorings, or costly AUVs and can have limited long-term stability. This project, therefore, proposes the development of a cost-efficient DIY profiling float for salinity estimation by way of back-calculation from the TEOS-10 equation of state of seawater. This calculation will be made from known float properties – float density at neutral buoyancy which equals surrounding seawater density – and the in-situ measurement of pressure and temperature via float sensors. This project aims to develop and validate a cost-effective profiling float from common materials with the potential application to increase data resolution in spatially and temporally dynamic estuary systems. For the proof of concept, the float will be deployed alongside a Seaglider in Colvos Passage, WA, for data validation. Unlike many areas of dynamic coastal ecosystems, Colvos Passage experiences high levels of mixing due to local bathymetry and poses as a unique validation site for float development since there is limited spatial variability, making cross-comparison of with the Seaglider easier. This ensures that salinity calculations from the float can be compared to Seaglider data in the same parcel of water to determine the float’s salinity estimation accuracy compared to an industry-standard method for measuring salinity.  
 
-The openFloat will collect 12-bit analog pressure and temperature, GPS location, lux, temperature, internal humidity, internal temperature, and internal pressure data. All data will be written to an onboard SD card and transmitted to an onshore base station via 915 mHz LoRa (long-range) radio. 
+The openFloat will collect pressure and temperature, GPS location, lux, temperature, internal humidity, internal temperature, and internal pressure data. All data will be written to an onboard SD card and transmitted to an onshore radio controller via 915 mHz LoRa (long-range) radio. A digital Onshape CAD model of the openFloat can be found [here](https://cad.onshape.com/documents/a3a60be64346f3ab3cbba062/w/3aa2cdeafc929d436fb9bbdd/e/518a3778be8193c016e5ac27?renderMode=0&uiState=65cc61833a62837281ccbb15).
 
-## openFloat data collection and electronics
-### Data collection 
+## openFloat Materials
+The openFloat is built from 3D-printed and stock hardware and electronics; all parts can be 3D-printed or easily purchased from websites such as [McMaster-Carr](https://www.mcmaster.com/), [Adafruit](https://www.adafruit.com/), [Amazon](https://www.amazon.com/), or [Digikey](https://www.digikey.com/?utm_adgroup=DigiKey&utm_source=google&utm_medium=cpc&utm_campaign=EN_Brand_Digi-Key&utm_term=digikey&utm_content=DigiKey&utm_id=go_cmp-120498675_adg-40368337894_ad-596393199263_kwd-136797198_dev-c_ext-_prd-_sig-Cj0KCQiAw6yuBhDrARIsACf94RWBRqzEcXLML9vEeFG1U0Cs7uAZAXh7rRQ0GD5xSQHI2-V4hFxq0_waAl9AEALw_wcB&gad_source=1&gclid=Cj0KCQiAw6yuBhDrARIsACf94RWBRqzEcXLML9vEeFG1U0Cs7uAZAXh7rRQ0GD5xSQHI2-V4hFxq0_waAl9AEALw_wcB).
 
-### Data storage and transmission
+A complete parts and STL file list can be found in this repo's "floatBuild" directory. 
 
-### Internal and engineering data collection
-
-## openFloat propulsion and electronics
-### Concept of buoyancy-driven robots
-
-### openFloat volume/density controll
-
-### Buoyancy engine
+## openFloat Project Concept
+The openFloat aims to increase data resolution in dynamic systems by cost-effectively measuring traditional oceanographic data such as temperature, pressure, and salinity. Salinity is not traditionally cheap to measure (e.g., a decent conductivity cell costs ~$5,000).
