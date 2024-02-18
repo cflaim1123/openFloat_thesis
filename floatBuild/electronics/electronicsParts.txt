@@ -1,0 +1,4 @@
+Adafruit 9dof website: https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/arduino-code 
+
+Adafruit pcf8523 RTC: https://learn.adafruit.com/adafruit-adalogger-featherwing/adafruit2-rtc-with-arduino
+
